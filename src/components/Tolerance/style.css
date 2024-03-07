@@ -1,0 +1,12 @@
+.vertical-line {
+    position: relative;
+}
+.vertical-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    height: 100%;
+    border: 0.5px solid #000; 
+
+}

@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+
+.wrapper {
+  background-color: #B3B3B3;
+  padding: 100px;
+}
+.primary-bg-color{
+  background-color: #1b3e73;
+}
+.primary-color, 
+select.form-select {
+  color: #1b3e73;
+}
+.secondary-color {
+  color:#F4A020;
+}
+.green-text {
+  color: #4C906D;
+}
+.bold-text, 
+select.form-bold.form-select {
+  font-weight: 600;
+}
+button.btn-primary.btn {
+  background-color: #1b3e73;
+  color: #fff;
+  border: none;
+  padding: 10px 30px;
+  font-weight: 600;
+
+}
+button.btn-secondary.btn {
+  color:#F4A020;
+  background: none;
+  border: 2px solid #F4A020;
+  padding: 10px 30px;
+  font-weight: 600;
+}
+.btn {
+  border-radius: 5px;
+  padding: 10px 40px;
+}
+.elem-w-border {
+  position: relative;
+  margin: auto;
+}
+.elem-w-border::after {
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 60%;
+  height: 1px; 
+  background-color: #E5E5E5; 
+}
+.primary-udnerline {
+  border-bottom: 1px solid #E5E5E5; 
+  padding-bottom: 25px;
+  width: 25%;
+  margin: auto;
+}
+label.form-check-label {
+  color: #1b3e73 !important;
+}
+.form-check-input:checked  {
+  background-color: #1b3e73 !important;
+  border-color: #1b3e73 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex-between-center  {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.container-modal {
+  background: #fff;
+  padding: 50px;
+  border-radius: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.custom-close-button {
+  background: #1b3e73;;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 30px;
+  font-weight: 200;
+  border: none;
+  margin-left: 40px;
+}
+form {
+  padding: 50px;
 }
